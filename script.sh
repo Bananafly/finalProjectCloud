@@ -12,11 +12,6 @@ setup() {
     docker exec container ./deploy.sh
 }
 
-send_requests() {
-    echo "Running benchmark..."
-    docker exec container python3 request_sender.py
-}
-
 teardown() {
     echo "Terminating environment..."
 
